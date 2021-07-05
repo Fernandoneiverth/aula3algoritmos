@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>formulario</title>
+</head>
+<body>
+<h1>Responda as questões abaixo:</h1>
+<form action="processa.php" name="formulario" method="get">
+	Seu nome:	<input name="nome" type="text"><br>
+			<label for="opção">Sexo:</label>
+			<input type="radio" name="opcao" value="masculino"/>masculino
+			<input type="radio" name="opcao" value="feminino"/>feminino<br>
+	Grau de Escolaridade	<select name="grau">
+  <option value="analfabeto">Analfabeto</option>
+  <option value="prezinho">Prézinho</option>
+  <option value="fundamental">Fundamental</option>
+  <option value="ensino_medio">Ensino Médio</option>
+  <option value="ensino_superior">Ensino Superior</option>
+  <option value="doc_mestre">Doutorado ou Mestrado</option></select>
+	Marque se for verdadeiro:	<input type="checkbox" name="problemas"/>Problemas de aprendizagem?
+			<input type="checkbox" name="deficiencia"/>Deficiência Mental ou Física?<br>
+	Caso tenha alguma deficiência, descreva-a aqui:
+	<textarea name="textdef" id="textdef"></textarea>
+		<input name="btnEnviar" type="submit" value="Enviar"><br>
+		<h3> made by neiverthh</h3>
+</form>
+</body>
+</html>

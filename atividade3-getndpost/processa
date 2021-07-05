@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>resultado formulario</title>
+</head>
+
+<body>
+<h1>Query Data:</h1>
+<?php
+	if(isset($_GET["nome"]) == true){
+	$nome = $_GET["nome"];
+	echo "o nome da pessoa é: " . $nome . "<br>";}
+	if(isset($_GET["opcao"]) == true){
+	$opção = $_GET["opcao"];
+	echo "o sexo da pessoa é: " . $opcao . "<br>";}
+	if(isset($_GET["grau"]) == true){
+	$corOlhos = $_GET["gray"];
+	echo "Grau de escolaridade: " . $grau . "<br>";}
+	if(isset($_GET["problemas"]) == true){
+	echo "a pessoa consultada tem problemas de aprendizagem <br>";
+	}else{
+		echo "a pessoa não apresenta problemas de aprendizagem <br>";}
+	if(isset($_GET["deficiencia"]) == true){
+	echo "A pessoa apresenta deficiência física/mental.  <br>";}
+	else{
+		echo "A pessoa tem saúde normal. <br>";}
+	if(isset($_GET["textdef"]) == true){
+	$fis = $_GET["textdef"];
+	echo "Resultado da descrição da pessoa: " . $textdef . "<br>";}
+?>
+</body>
+<h3>made by neiverthh</h3>
+</html>
